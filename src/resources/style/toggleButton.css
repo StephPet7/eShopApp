@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 17, 2020, 5:44:55 PM
+    Author     : Isaac
+*/
+
+
+.toggle-button {
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 5, 5, 4, 3;
+    -fx-padding: 0.166667em 0.833333em 0.25em 0.833333em; /* 2 10 3 10 */
+    
+    -fx-alignment: CENTER;
+    -fx-content-display: RIGHT;
+    
+    -jfx-toggle-color:-fx-second-color;
+    -jfx-toggle-line-color:-fx-second-color;
+    
+    -jfx-untoggle-color:-fx-second-color;
+    
+    -jfx-untoggle-line-color:derive(-fx-first-color-hex,50%);
+    
+    -jfx-size:13px;
+    
+}
+
+.toggle-button:selected {
+    -fx-text-fill: -fx-second-color;
+}

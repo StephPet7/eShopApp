@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="600.0" stylesheets="@../../resources/style/magasinier-Produit.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="magasinier.categorie.ViewCategoriesController">
+   <children>
+      <Circle fill="WHITE" layoutX="142.0" layoutY="138.0" radius="100.0" stroke="WHITE" strokeType="INSIDE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Circle>
+      <ImageView fx:id="img" fitHeight="139.0" fitWidth="145.0" layoutX="73.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/img/categoryDefault.png" />
+         </image>
+      </ImageView>
+      <FontAwesomeIconView fx:id="editImg" fill="#0b6f4f" glyphName="EDIT" layoutX="187.0" layoutY="229.0" onMouseClicked="#editImg" size="25">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+      <Label fx:id="nom" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="58.0" layoutY="252.0" text="Nom Categorie" textFill="#00796b">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <graphic>
+            <Label fx:id="code" text="Code" />
+         </graphic>
+      </Label>
+      <Separator layoutX="254.0" layoutY="25.0" maxWidth="5.0" orientation="VERTICAL" prefHeight="274.0" prefWidth="0.0" style="-fx-background-color: #00796B;" />
+      <Pagination fx:id="pagination" layoutX="269.0" layoutY="24.0" prefHeight="294.0" prefWidth="302.0" />
+      <VBox fx:id="listProduits" layoutX="271.0" layoutY="25.0" pickOnBounds="false" prefHeight="248.0" prefWidth="302.0" style="-fx-border-color: #00796B; -fx-background-color: white; -fx-border-width: 0 0 2px 0;" />
+      <JFXButton fx:id="valider" layoutX="474.0" layoutY="391.0" onMouseClicked="#valider" styleClass="b" text="Valider">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="annuler" layoutX="331.0" layoutY="391.0" onMouseClicked="#annuler" styleClass="bwi" text="Annuler">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="add" layoutX="234.0" layoutY="339.0" onMouseClicked="#add" styleClass="b" text="Ajouter Produit">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="15" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

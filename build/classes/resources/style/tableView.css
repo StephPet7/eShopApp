@@ -1,0 +1,89 @@
+ .table-view {
+	-fx-background-color:-fx-second-color;
+	-fx-table-header-border-color: -fx-second-color;
+	-fx-background-radius:0em 0em 1em 1em;
+	-fx-border-radius:0em 0em 1em 1em;
+}
+/* **Partie au dessus des headers* */
+.table-view .column-header-backgroud{
+    -fx-background-color:-fx-second-color;
+    -fx-padding: 1;
+    -fx-border-radius:0em 0em 1em 1em;
+}
+
+/* ************ Color of arrow **************** */
+.table-view .arrow{
+	-fx-mark-color:-fx-second-color;	
+}
+
+/* ************When column is dragged ************ */
+.table-view .column-drag-header {
+    -fx-background-color: -fx-first-color-91-transparent;
+    -fx-border-color: -fx-first-color;
+    -fx-opacity: 0.6;
+}
+
+/* Semi-transparent overlay to indicate the column that is currently being moved */
+.table-view .column-overlay {
+    -fx-background-color:-fx-first-color-91-transparent;
+    -fx-opacity: 0.3;
+}
+/* ****************Label des header****************** */	
+.table-view .column-header .label{
+    -fx-alignment: center;
+    -fx-text-fill:-fx-second-color;
+
+}
+
+/* This is shown when the table has no rows and/or no columns. */
+.table-view .empty-table {
+    -fx-background-color: -fx-second-color;
+    -fx-font-size: 1.166667em; /* 14pt - 2 more than the default font */
+    -fx-text-fill: -fx-first-color;
+}
+
+.table-view .empty-table .label{
+    -fx-text-fill: -fx-first-color;
+}
+
+.table-view .column-header{
+    -fx-background-color:-fx-first-color;
+    -fx-size: 40;
+    -fx-border-style: solid;
+    -fx-border-color:  -fx-second-color;
+   /* -fx-border-insets: 0 1 1 0, 0 0 0 0;*/
+    -fx-border-width: 0px 0px 1px 1px;
+}
+						
+.table-view > .virtual-flow > .scroll-bar:vertical{
+	 -fx-background-insets: 0, 1 0 0 0;
+ 	 -fx-padding: 0 -1 -1 -1;
+}
+		
+.table-view > .virtual-flow > .corner{
+ 	-fx-background-color:-fx-second-color;
+	-fx-background-insets: 0, 1 0 0 1;
+}
+
+/* When the table-row-cell is selected and focused */
+.table-view:focused > .virtual-flow > .clipped-container > .sheet > .table-row-cell:filled:focused:selected{
+    -fx-background-color:-fx-first-color;
+    -fx-background-insets: 0, 1, 2;
+}
+
+.table-view:focused > .virtual-flow > .clipped-container > .sheet > .table-row-cell:filled:focused:selected > .table-cell{
+    -fx-text-fill:-fx-second-color;
+    -fx-background-color:-fx-first-color;
+}
+
+.table-cell{
+    -fx-background-color: -fx-second-color;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; 
+    -fx-text-fill: -fx-first-color;
+    -fx-alignment:center;
+}
+
+/*.table-view:focused > .virtual-flow > .clipped-container > .sheet > .table-row-cell:filled:selected > .table-cell {
+    -fx-text-fill: -fx-first-color;/*-fx-selection-bar-text;
+}*/

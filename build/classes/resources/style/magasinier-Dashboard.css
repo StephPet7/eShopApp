@@ -1,0 +1,20 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+@import url("rootPane.css");
+@import url("variables.css");
+@import url("logo.css");
+@import url("chemin.css");
+@import url("usernameProperties.css");
+@import url("tableView.css");
+@import url("toggleButton.css");
+@import url("buttons.css");
+@import url("comboBox.css");
+@import url("scrollPane.css");
+
+
+.rootPane2{
+    -fx-background-color: -fx-first-color-91-transparent;
+    -fx-background-radius: 15% 2% 2% 2%;
+}

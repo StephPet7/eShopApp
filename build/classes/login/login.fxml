@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane styleClass="rootPane" stylesheets="@../resources/style/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginController">
+   <children>
+      <Group>
+         <children>
+            <Pane layoutX="14.0" layoutY="28.0" prefHeight="368.0" prefWidth="580.0" styleClass="rootPane2">
+               <children>
+                  <JFXTextField fx:id="user" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="123.0" layoutY="96.0" prefHeight="39.0" prefWidth="310.0" promptText="Username" styleClass="t" unFocusColor="#2196f3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <ImageView fitHeight="40.0" fitWidth="39.0" layoutX="118.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/img/user.png" />
+                     </image>
+                  </ImageView>
+                  <JFXPasswordField fx:id="pass" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="123.0" layoutY="169.0" prefHeight="39.0" prefWidth="311.0" promptText="Password" styleClass="t" unFocusColor="#2196f3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXButton fx:id="forget" layoutX="120.0" layoutY="231.0" onAction="#passwordForget" ripplerFill="WHITE" styleClass="link" text="Password forget ?" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXCheckBox fx:id="asAdmin" checkedColor="#2196f3" layoutX="325.0" layoutY="235.0" styleClass="checkbox" text="Log in as Admin" textFill="WHITE" unCheckedColor="WHITE">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXCheckBox>
+                  <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="121.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/img/pass.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="login" alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="0.0" layoutX="371.0" layoutY="279.0" onAction="#logIn" ripplerFill="WHITE" styleClass="bw" text="Log in" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="32.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/img/go.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXComboBox fx:id="langue" layoutX="22.0" layoutY="146.0" prefHeight="25.0" prefWidth="94.0" promptText="Language" unFocusColor="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXComboBox>
+                  <ImageView fitHeight="36.0" fitWidth="34.0" layoutX="89.0" layoutY="145.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/img/translation.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="cgu" layoutX="349.0" layoutY="338.0" onMouseClicked="#loadCGU" styleClass="link" text="Users Terms">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="QUESTION_CIRCLE" size="18" />
+                     </graphic>
+                  </Label>
+                  <Label layoutX="467.0" layoutY="339.0" styleClass="link" text="Juin-2020-3GI" />
+                  <Label fx:id="settings" layoutX="226.0" layoutY="337.0" onMouseClicked="#loadCGU" styleClass="link" text="App Settings">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="GEARS" size="18" />
+                     </graphic>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Pane>
+            <Pane layoutX="125.0" layoutY="-9.0">
+               <children>
+                  <Label fx:id="welcome" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutY="43.0" prefWidth="134.0" styleClass="welcome" text="Welcome to" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#2196f3" />
+                     </effect>
+                  </Label>
+                  <Label layoutX="135.0" layoutY="8.0" prefHeight="75.0" prefWidth="41.0" styleClass="e" text="e" textFill="WHITE">
+                     <font>
+                        <Font name="Broadway" size="90.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#2196f3" />
+                     </effect>
+                  </Label>
+                  <Label layoutX="224.0" layoutY="38.0" styleClass="hop" text="hop" textFill="#2298f2c5">
+                     <font>
+                        <Font name="CentSchbkCyrill BT Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="173.0" layoutY="-2.0" prefHeight="75.0" prefWidth="41.0" styleClass="s" text="S" textFill="#249bf0">
+                     <font>
+                        <Font name="Broadway" size="90.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#2196f3" />
+                     </effect>
+                  </Label>
+                  <Separator layoutX="-28.0" layoutY="95.0" opacity="0.45" prefHeight="0.0" prefWidth="392.0" />
+                  <Label fx:id="slogan" layoutX="243.0" layoutY="92.0" text="\${Slogan Here}" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+         </children>
+      </Group>
+   </children>
+</StackPane>

@@ -1,0 +1,16 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 16, 2020, 11:56:42 PM
+    Author     : Isaac
+*/
+
+.checkbox{
+    -jfx-checked-color: -fx-first-color;
+    -jfx-unchecked-color:-fx-second-color;
+    -fx-text-fill: -fx-second-color;    
+    -fx-effect:dropshadow(three-pass-box,-fx-shadow-color,10,0.0,0,0);
+}

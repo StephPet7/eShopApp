@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_RIGHT" prefHeight="460.0" prefWidth="448.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.CGUController">
+   <children>
+      <Label alignment="CENTER" prefHeight="41.0" prefWidth="448.0" text="Conditions Générales d'utilisation" textFill="#36903b" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ScrollPane fitToWidth="true" hbarPolicy="NEVER" pannable="true" prefHeight="432.0" prefWidth="393.0" vbarPolicy="ALWAYS" VBox.vgrow="ALWAYS">
+        <content>
+            <VBox alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="380.0" text="ARTICLE 1 – OBJET DES CONDITIONS GENERALES D’UTILISATION">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" text="     Les présentes conditions générales d’utilisation (ci-après « CGU ») ont pour objet de définir les règles d’utilisation de l’application eShop (ci-après « l’Application ») éditée par eShop Team( groupe d'élèves en 3GI)  pour le compte du projet de fin d'année  de l'UE Projet de B.D. Contact: eshop.team3GI@gmail.com. En installant l’Application sur votre terminal et/ou en accédant à l’Application, vous acceptez sans réserve l’intégralité des présentes CGU et vous engagez à respecter les obligations à votre charge. Dans le cas où vous n’accepteriez pas les CGU ou auriez des réserves, merci de ne pas utiliser l’Application." textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="380.0" text="ARTICLE 2 – OBJET ET FONCTIONNALITES DE L’APPLICATION">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" layoutX="20.0" layoutY="60.0" text="     L’Application vous permet de gerer facilement un Shop. Aussi, elle permet d'etablir des recapitulatif journalier et de faire les comptes. Toutes operations effectuees par les caissiers ou les magasiniers sont sauvegardées et peuvent etre consultées par un administrateur à tout moment. Ces fonctionnalités peuvent être enrichies ou modifiées à tout moment par eShop_Team sans que sa responsabilité ne puisse être engagée à ce titre." textAlignment="JUSTIFY" wrapText="true">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="10.0" layoutY="269.0" prefHeight="17.0" prefWidth="380.0" text="ARTICLE 3 – LICENCE D’UTILISATION">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" layoutX="20.0" layoutY="286.0" text="     eshop_Team vous concède un droit personnel d’utilisation de l’Application et de soncontenu. Ce droit est accordé à titre non exclusif, révocable, non cessible, non transférable,mondial et gratuit et pour la seule utilisation de l’Application, à l’exclusion de toute autrefinalité.Il est strictement interdit d’accéder et/ou d’utiliser et/ou de tenter d’accéder ou d’utiliser lescodes sources ou objets de l’Application.Vous n’acquérez aucun droit de propriété intellectuelle sur l’Application ou son contenu, niaucun autre droit que ceux conférés par les présentes CGU." textAlignment="JUSTIFY" wrapText="true">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="37.0" layoutY="381.0" prefHeight="17.0" prefWidth="380.0" text="ARTICLE 4 - DONNÉES PERSONNELLES">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" layoutX="20.0" layoutY="398.0" text="     Les données personnelles utilisées sont principalement votre nom, prénom, fonction, adresseprofessionnelle, numéro de téléphone, adresse mail, photo d’identité, profil métier, missionsdéjà effectuées et planifiées, vos disponibilités.Vos droits d’accès et de rectification peuvent être exercés en nous envoyant un mail à ladresse : eshp.team.3GI@gmail.com" textAlignment="JUSTIFY" wrapText="true">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </VBox>
+        </content>
+      </ScrollPane>
+   </children>
+   <padding>
+      <Insets bottom="10.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="716.0" prefWidth="901.0" styleClass="rootPane" stylesheets="@../resources/style/admin-Dashboard.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.DashboardController">
+   <center>
+      <Group BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="-17.0" layoutY="44.0" prefHeight="573.0" prefWidth="779.0" styleClass="rootPane2">
+               <children>
+                  <Label fx:id="user" layoutX="613.0" layoutY="8.0" styleClass="username" text="\${Username}" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="40.0" fitWidth="39.0" layoutX="574.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/img/user.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <HBox layoutX="188.0" layoutY="52.0" prefHeight="35.0" prefWidth="543.0" styleClass="chemin">
+                     <children>
+                        <Label fx:id="lien" prefHeight="33.0" text="Admin" textFill="#2196f3">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/img/chevron.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="7.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="lien1" layoutX="15.0" layoutY="10.0" prefHeight="35.0" text="Dashboard" textFill="#2196f3">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+                  <Pane layoutX="607.0" layoutY="3.0" onMouseClicked="#logOut" />
+                  <Label layoutX="640.0" layoutY="540.0" prefHeight="19.0" prefWidth="137.0" styleClass="version" text="\@Script0 -- Avril 2020" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="question" layoutX="293.0" layoutY="111.0" prefHeight="26.0" prefWidth="262.0" styleClass="question" text="What do you want to do ?" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="564.0" layoutY="122.0" opacity="0.33" prefHeight="0.0" prefWidth="117.0" />
+                  <Separator layoutX="144.0" layoutY="124.0" opacity="0.33" prefHeight="0.0" prefWidth="117.0" />
+                  <ImageView fx:id="exit" fitHeight="37.0" fitWidth="36.0" layoutX="731.0" layoutY="6.0" mouseTransparent="true" onMouseClicked="#logOut" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/img/shutdown.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <VBox layoutX="147.0" layoutY="140.0" prefHeight="424.0" prefWidth="533.0">
+                     <children>
+                        <HBox spacing="100.0">
+                           <children>
+                              <Pane onMouseClicked="#loadGestionnaires" styleClass="optionPane">
+                                 <children>
+                                    <ImageView fitHeight="120.0" fitWidth="99.0" layoutX="4.0" layoutY="16.0" mouseTransparent="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../resources/img/employses_120px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="gestionnaires" alignment="CENTER" layoutX="-12.0" layoutY="115.0" mouseTransparent="true" prefHeight="27.0" prefWidth="131.0" text="Gestionnaires" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets bottom="190.0" top="20.0" />
+                                 </HBox.margin>
+                              </Pane>
+                              <Pane onMouseClicked="#loadFactures" prefHeight="25.0" prefWidth="136.0" styleClass="optionPane">
+                                 <children>
+                                    <ImageView fitHeight="117.0" fitWidth="111.0" layoutX="3.0" layoutY="13.0" mouseTransparent="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../resources/img/facture.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="factures" alignment="CENTER" layoutX="-11.0" layoutY="122.0" mouseTransparent="true" prefHeight="27.0" prefWidth="136.0" text="Factures" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets bottom="190.0" top="20.0" />
+                                 </HBox.margin>
+                              </Pane>
+                              <Pane onMouseClicked="#loadStock" styleClass="optionPane">
+                                 <children>
+                                    <ImageView fitHeight="102.0" fitWidth="107.0" layoutX="-3.0" layoutY="14.0" mouseTransparent="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../resources/img/stock.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="stock" alignment="CENTER" layoutX="-8.0" layoutY="125.0" mouseTransparent="true" prefHeight="27.0" prefWidth="136.0" text="Stock" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets bottom="190.0" top="20.0" />
+                                 </HBox.margin>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <HBox spacing="60.0">
+                           <children>
+                              <Pane fx:id="suppliers" onMouseClicked="#loadSuppliers" prefHeight="2.0" prefWidth="124.0" styleClass="optionPane">
+                                 <children>
+                                    <ImageView fitHeight="102.0" fitWidth="107.0" layoutX="12.0" layoutY="14.0" mouseTransparent="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../resources/img/Supplier.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" layoutX="-10.0" layoutY="125.0" mouseTransparent="true" prefHeight="27.0" prefWidth="136.0" text="Fournisseur" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets bottom="190.0" top="20.0" />
+                                 </HBox.margin>
+                              </Pane>
+                              <Pane fx:id="statistiques" onMouseClicked="#loadStats" styleClass="optionPane">
+                                 <children>
+                                    <ImageView fitHeight="102.0" fitWidth="107.0" layoutX="19.0" layoutY="14.0" mouseTransparent="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../resources/img/statistic.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" layoutX="2.0" layoutY="125.0" mouseTransparent="true" prefHeight="27.0" prefWidth="136.0" text="Statistique" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets bottom="190.0" top="20.0" />
+                                 </HBox.margin>
+                              </Pane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane layoutX="-36.0" layoutY="-9.0">
+               <children>
+                  <Label layoutY="8.0" prefHeight="75.0" prefWidth="41.0" styleClass="e" text="e" textFill="WHITE">
+                     <font>
+                        <Font name="Broadway" size="90.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#2196f3" />
+                     </effect>
+                  </Label>
+                  <Label layoutX="89.0" layoutY="38.0" styleClass="hop" text="hop" textFill="#2298f2c5">
+                     <font>
+                        <Font name="CentSchbkCyrill BT Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="38.0" layoutY="-2.0" prefHeight="75.0" prefWidth="41.0" styleClass="s" text="S" textFill="#249bf0">
+                     <font>
+                        <Font name="Broadway" size="90.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#2196f3" />
+                     </effect>
+                  </Label>
+                  <Separator layoutX="55.0" layoutY="87.0" opacity="0.45" prefHeight="0.0" prefWidth="174.0" />
+                  <Label fx:id="slogan" layoutX="18.0" layoutY="91.0" text="\\${Slogan Here}" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Handwriting Italic" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <JFXComboBox fx:id="langue" labelFloat="true" layoutX="259.0" layoutY="42.0" prefHeight="31.0" prefWidth="103.0" promptText="Language" unFocusColor="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXComboBox>
+            <ImageView fitHeight="36.0" fitWidth="34.0" layoutX="337.0" layoutY="41.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/img/translation.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+   </center>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</BorderPane>

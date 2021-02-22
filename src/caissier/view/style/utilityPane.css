@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 20, 2020, 11:58:14 AM
+    Author     : Shaquillo
+*/
+
+.paneDetails{
+    -fx-background-color: rgb(145, 239, 145);
+    -fx-background-radius: 1em;
+    -fx-effect:dropshadow(three-pass-box,#615b5b,10,0,0,0);
+}
+
+.searchButton{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 0em 0em 0em 1em;
+    -fx-border-color: rgb(11, 148, 11);
+    -fx-border-radius:  0em 0em 0em 1em;
+}
+
+.searchButton:hover{
+    -fx-background-color: rgba(11, 148, 11, 0.5);
+}
+
+.searchTextField{
+    -fx-background-radius: 0em 1.1em 0em 0em;
+    -fx-border-color: rgb(11, 148, 11);
+    -fx-border-radius:  0em 1.1em 0em 0em;
+    -fx-text-fill: rgb(11, 148, 11);
+}

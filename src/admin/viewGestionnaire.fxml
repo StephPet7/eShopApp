@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="456.0" prefWidth="636.0" style="-fx-background-color: TRANSPARENT;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.ViewGestionnaireController">
+   <children>
+      <Pagination fx:id="pagination" currentPageIndex="2" layoutY="15.0" pageCount="20" prefHeight="441.0" prefWidth="636.0" style="-fx-background-color: white; -fx-background-radius: 1.3em 1.3em 0em 0em; -fx-border-color: #0b6f4f; -fx-border-radius: 1.2em 1.2em 0 0;" />
+      <Pane fx:id="apercuPane" layoutX="8.0" layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="610.0" style="-fx-background-color: #ffffff; -fx-border-color: #00796b; -fx-border-width: 0 0 2px 0;" stylesheets="@../resources/style/editProduits.css">
+         <children>
+            <Pane layoutX="192.0" layoutY="35.0" prefHeight="315.0" prefWidth="415.0" style="-fx-background-color: #fcfcfc; -fx-background-radius: 0  1.1em 1.1em 0; -fx-border-color: #0b6f4f; -fx-border-radius: 0  1em 1em 0;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Label fx:id="matricule" alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="49.0" text="Matricule" textFill="#1f807b">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="type" alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="74.0" text="Type" textFill="#f50000">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="email" alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="108.0" text="Email">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="contact" alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="148.0" text="Contact">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="adresse" alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="182.0" text="Adresse">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="login" alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="215.0" text="Nom d'utilisateur">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="password" alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="253.0" text="Password">
+                     <font>
+                        <Font name="Times New Roman Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nom" alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="14.0" text="Nom Employe" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="actif" alignment="CENTER" contentDisplay="CENTER" layoutX="105.0" layoutY="282.0" text="Actif">
+                     <font>
+                        <Font name="Times New Roman" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Circle fill="#fcfcfc" layoutX="105.0" layoutY="163.0" radius="107.0" stroke="#0b6f4f" strokeLineCap="ROUND">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Circle>
+            <ImageView fx:id="apercuImg" fitHeight="158.0" fitWidth="139.0" layoutX="34.0" layoutY="83.0" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/img/user.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="modifier" layoutX="506.0" layoutY="352.0" onAction="#loadEditGestionnaire" prefHeight="33.0" prefWidth="100.0" styleClass="b" text="Modifier" />
+            <ImageView fitHeight="36.0" fitWidth="34.0" layoutX="146.0" layoutY="6.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/img/language.png" />
+               </image>
+            </ImageView>
+            <FontAwesomeIconView fx:id="close" fill="#00796b" glyphName="CLOSE" layoutX="583.0" layoutY="20.0" onMouseClicked="#close" size="25" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Pane>
+      <JFXComboBox fx:id="langue" focusColor="#277268" labelFloat="true" layoutX="19.0" layoutY="10.0" prefHeight="31.0" prefWidth="133.0" unFocusColor="#277268">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXComboBox>
+   </children>
+</Pane>

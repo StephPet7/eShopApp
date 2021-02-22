@@ -1,0 +1,42 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 17, 2020, 1:40:42 AM
+    Author     : Isaac
+*/
+
+
+.welcome{
+    -fx-text-fill: -fx-second-color;
+    -fx-font-size:25px;
+    -fx-effect:dropshadow(three-pass-box,-fx-first-color,10,0.0,0,0);
+}
+
+.e{
+     -fx-text-fill: -fx-second-color;
+     -fx-font-family:"Broadway";
+    -fx-font-size:90px;
+    -fx-effect:dropshadow(three-pass-box,-fx-first-color,10,0.0,0,0);
+}
+
+.s{
+    -fx-text-fill: -fx-first-color;
+    -fx-font-family:"Broadway";
+    -fx-font-size:90px;
+    -fx-effect:dropshadow(three-pass-box,-fx-first-color,10,0.0,0,0);
+}
+
+.hop{
+     -fx-text-fill: -fx-first-color;
+     -fx-font-family:"CentSchbkCyrill BT";
+    -fx-font-size:36px;
+    -fx-effect:dropshadow(three-pass-box,-fx-first-color,10,0.0,0,0);
+}
+
+.slogan{
+    -fx-text-fill: -fx-second-color;
+    -fx-font-size: 19px;
+}

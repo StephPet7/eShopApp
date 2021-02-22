@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="apercuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: TRANSPARENT;" stylesheets="@../../resources/style/editProduits.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="magasinier.categorie.CategorieController">
+   <children>
+      <Pane layoutX="179.0" layoutY="41.0" style="-fx-background-color: #fcfcfc; -fx-background-radius: 0  1.1em 1.1em 0; -fx-border-color: white; -fx-border-radius: 0  1em 1em 0;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <FontAwesomeIconView fill="#00796b" glyphName="CLOSE" layoutX="180.0" layoutY="140.0" onMouseClicked="#close" size="25" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></FontAwesomeIconView>
+            <FontAwesomeIconView fill="#00796b" glyphName="EDIT" layoutX="149.0" layoutY="142.0" onMouseClicked="#edit" size="25" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></FontAwesomeIconView>
+            <FontAwesomeIconView fill="#00796b" glyphName="EYE" layoutX="114.0" layoutY="140.0" onMouseClicked="#view" size="25" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></FontAwesomeIconView>
+            <Label fx:id="nom" contentDisplay="RIGHT" layoutX="32.0" text="Nom Categorie" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="code" alignment="CENTER_RIGHT" contentDisplay="CENTER" text="code" textFill="#095757">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </Label>
+            <VBox fx:id="listeProduits" alignment="TOP_RIGHT" layoutX="41.0" layoutY="20.0" maxHeight="93.0" maxWidth="165.0" prefHeight="93.0" prefWidth="165.0">
+               <children>
+                  <Label text="produits" textFill="#727070">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Circle fill="#fcfcfc" layoutX="112.0" layoutY="115.0" radius="100.0" stroke="WHITE" strokeLineCap="ROUND">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Circle>
+      <ImageView fx:id="apercuImg" fitHeight="142.0" fitWidth="139.0" layoutX="43.0" layoutY="45.0" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/img/defaultProduct.png" />
+         </image>
+      </ImageView>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</Pane>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="magasinier.dashboard.DashboardController">
+   <children>
+      <AnchorPane prefHeight="558.0" prefWidth="715.0" styleClass="rootPane" stylesheets="@../../resources/style/magasinier-Dashboard.css">
+         <children>
+            <Pane layoutX="40.0" layoutY="25.0" prefHeight="520.0" prefWidth="705.0" styleClass="rootPane2" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="25.0" />
+            <HBox alignment="CENTER_LEFT" layoutX="245.0" layoutY="76.0" prefHeight="22.0" prefWidth="498.0" styleClass="chemin" AnchorPane.leftAnchor="245.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0">
+               <children>
+                  <Label fx:id="lien" text="Magasinier" textFill="#2196f3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <ImageView fitHeight="21.0" fitWidth="20.0" preserveRatio="true" rotate="-2.0">
+                     <image>
+                        <Image url="@../../resources/img/chevron.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lien1" text="Stats" textFill="#2196f3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <ImageView fitHeight="21.0" fitWidth="20.0" preserveRatio="true" rotate="-2.0">
+                     <image>
+                        <Image url="@../../resources/img/chevron.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+            <Pane layoutX="10.0" layoutY="-13.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="-13.0">
+               <children>
+                  <Label layoutY="8.0" prefHeight="75.0" prefWidth="41.0" styleClass="e" text="e" textFill="WHITE">
+                     <font>
+                        <Font name="Broadway" size="90.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#2196f3" />
+                     </effect>
+                  </Label>
+                  <Label layoutX="89.0" layoutY="38.0" styleClass="hop" text="hop" textFill="#2298f2c5">
+                     <font>
+                        <Font name="CentSchbkCyrill BT Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="38.0" layoutY="-2.0" prefHeight="75.0" prefWidth="41.0" styleClass="s" text="S" textFill="#249bf0">
+                     <font>
+                        <Font name="Broadway" size="90.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#2196f3" />
+                     </effect>
+                  </Label>
+                  <Separator layoutX="55.0" layoutY="87.0" opacity="0.45" prefHeight="0.0" prefWidth="174.0" />
+                  <Label fx:id="slogan" layoutX="108.0" layoutY="84.0" styleClass="slogan" text="\${Slogan Here}" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <Label fx:id="username" layoutX="523.0" layoutY="35.0" styleClass="username" text="test" textFill="WHITE" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="35.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="39.0" layoutX="459.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="27.0">
+               <image>
+                  <Image url="@../../resources/img/user.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Pane layoutX="695.0" layoutY="34.0" onMouseClicked="#logOut" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="30.0">
+               <children>
+                  <ImageView fitHeight="37.0" fitWidth="36.0" layoutY="-1.0" mouseTransparent="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/img/shutdown.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Separator layoutX="123.0" layoutY="122.0" opacity="0.46" prefHeight="3.0" prefWidth="474.0" AnchorPane.leftAnchor="123.0" AnchorPane.rightAnchor="118.0" AnchorPane.topAnchor="122.0" />
+            <HBox alignment="CENTER" layoutX="70.0" layoutY="108.0" prefWidth="542.0" spacing="80.0" style="-fx-alignment: center;" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="73.0" AnchorPane.topAnchor="108.0">
+               <children>
+                  <JFXButton fx:id="categories" layoutX="105.0" layoutY="10.0" onMouseClicked="#categories" ripplerFill="#2196f3" styleClass="b" text="Catégories">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="produits" layoutX="10.0" layoutY="10.0" onMouseClicked="#produits" ripplerFill="#2196f3" styleClass="b" text="Produits">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="dashboard" ripplerFill="#2196f3" styleClass="bSelected" text="Stats">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <ScrollPane fx:id="chartPane" hbarPolicy="ALWAYS" layoutX="30.0" layoutY="225.0" prefHeight="540.0" prefWidth="692.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="150.0">
+               <content>
+                  <VBox alignment="CENTER" spacing="5.0">
+                     <children>
+                        <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Pane>
+                                 <children>
+                                    <AreaChart fx:id="flowGraph" prefHeight="319.0" prefWidth="474.0">
+                                       <xAxis>
+                                          <CategoryAxis prefWidth="477.0" side="BOTTOM" />
+                                       </xAxis>
+                                       <yAxis>
+                                          <NumberAxis side="LEFT" />
+                                       </yAxis>
+                                    </AreaChart>
+                                    <JFXButton fx:id="refreshFlow" layoutX="378.0" layoutY="3.0" onAction="#refreshFlow" styleClass="bwi" text="Refresh">
+                                       <graphic>
+                                          <ImageView fitHeight="21.0" fitWidth="19.0">
+                                             <image>
+                                                <Image url="@../../resources/img/update.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </Pane>
+                              <Pane>
+                                 <children>
+                                    <PieChart fx:id="proportionsCategorie" prefHeight="316.0" prefWidth="480.0" />
+                                    <JFXButton fx:id="refreshProportionsCategorie" layoutX="375.0" layoutY="10.0" onAction="#refreshProportionsCategorie" styleClass="bwi" text="Refresh">
+                                       <graphic>
+                                          <ImageView fitHeight="21.0" fitWidth="19.0">
+                                             <image>
+                                                <Image url="@../../resources/img/update.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Pane prefHeight="417.0" prefWidth="500.0" styleClass="monthlyOverview">
+                                 <children>
+                                    <Label layoutX="5.0" layoutY="2.0" prefHeight="36.0" prefWidth="267.0" styleClass="nameProfile" text="Evolution du Stock" />
+                                    <AreaChart fx:id="typeProduitGraph" layoutY="42.0" prefHeight="352.0" prefWidth="458.0">
+                                       <xAxis>
+                                          <CategoryAxis side="BOTTOM" />
+                                       </xAxis>
+                                       <yAxis>
+                                          <NumberAxis side="LEFT" />
+                                       </yAxis>
+                                    </AreaChart>
+                                    <JFXButton fx:id="refreshTypeProduit" layoutX="370.0" layoutY="19.0" onAction="#refreshTypeProduit" styleClass="bwi" text="Refresh">
+                                       <graphic>
+                                          <ImageView fitHeight="21.0" fitWidth="19.0">
+                                             <image>
+                                                <Image url="@../../resources/img/update.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="417.0" prefWidth="500.0" styleClass="monthlyOverview">
+                                 <children>
+                                    <Label layoutX="13.0" layoutY="2.0" prefHeight="50.0" prefWidth="136.0" styleClass="nameProfile" text="Ventes par Categories" />
+                                    <Label layoutX="13.0" layoutY="44.0" text="Period:" />
+                                    <Label fx:id="date" layoutX="56.0" layoutY="44.0" text="Oct 14 , 2019- Oct 21, 2019 " />
+                                    <BarChart fx:id="salesGraph" layoutY="69.0" prefHeight="341.0" prefWidth="469.0">
+                                       <xAxis>
+                                          <CategoryAxis side="BOTTOM" />
+                                       </xAxis>
+                                       <yAxis>
+                                          <NumberAxis side="LEFT" />
+                                       </yAxis>
+                                    </BarChart>
+                                    <JFXButton fx:id="refreshSales" layoutX="341.0" layoutY="38.0" onAction="#refreshSales" styleClass="bwi" text="Refresh">
+                                       <graphic>
+                                          <ImageView fitHeight="21.0" fitWidth="19.0">
+                                             <image>
+                                                <Image url="@../../resources/img/update.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <JFXComboBox fx:id="langue" layoutX="270.0" layoutY="36.0" prefHeight="25.0" prefWidth="94.0" promptText="Language" unFocusColor="WHITE" AnchorPane.leftAnchor="270.0" AnchorPane.topAnchor="35.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXComboBox>
+            <ImageView fitHeight="36.0" fitWidth="34.0" layoutX="337.0" layoutY="35.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="337.0" AnchorPane.topAnchor="35.0">
+               <image>
+                  <Image url="@../../resources/img/translation.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

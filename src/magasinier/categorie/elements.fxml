@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<HBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="magasinier.categorie.ElementsController">
+   <children>
+        <Pane>
+           <children>
+              <Circle fill="DODGERBLUE" layoutX="24.0" layoutY="26.0" radius="24.0" stroke="WHITE" strokeType="INSIDE" />
+              <ImageView fx:id="img" fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true" />
+           </children>
+        </Pane>
+        <Label fx:id="nom" contentDisplay="BOTTOM" text="Nom produit Ici" HBox.hgrow="ALWAYS">
+           <font>
+              <Font size="18.0" />
+           </font>
+           <graphic>
+              <Label fx:id="code" text="code( prix FCFA)" />
+           </graphic>
+        </Label>
+        <HBox alignment="CENTER_RIGHT" pickOnBounds="false" HBox.hgrow="ALWAYS">
+           <children>
+              <FontAwesomeIconView fill="RED" glyphName="CLOSE" onMouseClicked="#remove" size="25" HBox.hgrow="ALWAYS">
+                 <cursor>
+                    <Cursor fx:constant="HAND" />
+                 </cursor>
+              </FontAwesomeIconView>
+           </children>
+           <padding>
+              <Insets right="5.0" />
+           </padding>
+        </HBox>
+   </children>
+</HBox>

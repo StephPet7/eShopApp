@@ -1,0 +1,80 @@
+ .table-view {
+	-fx-background-color:#ffffff;
+	-fx-table-header-border-color: #ffffff;
+	-fx-background-radius:0em 0em 1em 1em;
+	-fx-border-radius:0em 0em 1em 1em;
+}
+/* **Partie au dessus des headers* */
+.table-view .column-header-backgroud{
+    -fx-background-color: #ffffff;
+    -fx-padding: 1;
+    -fx-border-radius:0em 0em 1em 1em;
+}
+
+/* ************ Color of arrow **************** */
+.table-view .arrow{
+	-fx-mark-color:#ffffff;	
+}
+
+/* ************When column is dragged ************ */
+.table-view .column-drag-header {
+    -fx-background-color: rgba( 33,150,243,0.91);
+    -fx-border-color: transparent;
+    -fx-opacity: 0.6;
+}
+
+/* Semi-transparent overlay to indicate the column that is currently being moved */
+.table-view .column-overlay {
+    -fx-background-color: rgba( 33,150,243,0.91);;
+    -fx-opacity: 0.3;
+}
+/* ****************Label des header****************** */	
+.table-view .column-header .label{
+    -fx-alignment: center;
+    -fx-text-fill: #ffffff;
+
+}
+.table-view .column-header{
+    -fx-background-color:rgb(11,148,11);
+    -fx-size: 40;
+    -fx-border-style: solid;
+    -fx-border-color:  #ffffff;
+   /* -fx-border-insets: 0 1 1 0, 0 0 0 0;*/
+    -fx-border-width: 0px 0px 1px 1px;
+}
+						
+.table-view > .virtual-flow > .scroll-bar:vertical{
+	 -fx-background-insets: 0, 1 0 0 0;
+ 	 -fx-padding: 0 -1 -1 -1;
+}
+		
+.table-view > .virtual-flow > .corner{
+ 	-fx-background-color: #000000;
+	-fx-background-insets: 0, 1 0 0 1;
+}
+				
+.table-row-cell {
+    -fx-background-color: -fx-table-cell-border-color, -fx-control-inner-background;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+/* When the table-row-cell is selected and focused */
+.table-view:focused > .virtual-flow > .clipped-container > .sheet > .table-row-cell:filled:focused:selected{
+    -fx-background-color: rgb( 33,150,243);
+    -fx-background-insets: 0, 1, 2;
+    -fx-background: -fx-accent;
+    -fx-text-fill: #ffffff;
+}
+
+.table-row-cell {
+    -fx-background-color: -fx-table-cell-border-color, -fx-control-inner-background;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+.table-view:focused > .virtual-flow > .clipped-container > .sheet > .table-row-cell:filled:selected > .table-cell {
+    -fx-text-fill: -fx-selection-bar-text;
+}

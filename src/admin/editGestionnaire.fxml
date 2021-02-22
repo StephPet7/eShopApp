@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.EditGestionnaireController">
+   <children>
+      <Pane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="775.0" styleClass="rootPane" stylesheets="@../resources/style/editProduits.css">
+         <children>
+            <Circle fill="#fcfcfc" layoutX="608.0" layoutY="171.0" radius="100.0" stroke="#0b6f4f" strokeLineCap="ROUND">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Circle>
+            <Pane layoutY="-1.0" prefHeight="36.0" prefWidth="775.0" styleClass="paneEntete">
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutX="4.0" layoutY="8.0" prefHeight="22.0" prefWidth="601.0" styleClass="chemin">
+                     <children>
+                        <Label fx:id="lien" text="Admin" textFill="#2196f3">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <ImageView fitHeight="21.0" fitWidth="20.0" preserveRatio="true" rotate="-2.0">
+                           <image>
+                              <Image url="@../resources/img/chevron.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lien1" text="Employe" textFill="#2196f3">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <ImageView fitHeight="21.0" fitWidth="20.0" preserveRatio="true" rotate="-2.0">
+                           <image>
+                              <Image url="@../resources/img/chevron.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lien11" text="Modifier un employé" textFill="#2196f3">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <ImageView fitHeight="21.0" fitWidth="20.0" preserveRatio="true" rotate="-2.0">
+                           <image>
+                              <Image url="@../resources/img/chevron.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </Pane>
+            <Label fx:id="title" alignment="CENTER" layoutX="118.0" layoutY="40.0" prefHeight="36.0" prefWidth="234.0" styleClass="paneTitle" text="Modifier un Employé">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="60.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/img/product_management.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Separator layoutX="28.0" layoutY="57.0" prefHeight="3.0" prefWidth="122.0" />
+            <Separator layoutX="328.0" layoutY="57.0" prefHeight="3.0" prefWidth="101.0" />
+            <Pane layoutY="79.0" prefHeight="445.0" prefWidth="449.0" styleClass="panePied">
+               <children>
+                  <JFXTextField fx:id="email" layoutX="32.0" layoutY="317.0" prefHeight="37.0" prefWidth="110.0" promptText="email" styleClass="textInfo" />
+                  <ImageView fitHeight="32.0" fitWidth="60.0" layoutX="156.0" layoutY="317.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/img/email.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="60.0" layoutX="156.0" layoutY="219.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/img/typeEmployee.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextField fx:id="login" layoutX="268.0" layoutY="319.0" prefHeight="31.0" prefWidth="122.0" promptText="Nom d'utilisateur" styleClass="textInfo" />
+                  <ImageView fitHeight="32.0" fitWidth="60.0" layoutX="376.0" layoutY="317.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/img/userWhite.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextField fx:id="nom" layoutX="32.0" layoutY="133.0" prefHeight="31.0" prefWidth="172.0" promptText="Nom" styleClass="textInfo" />
+                  <JFXTextField fx:id="adresse" layoutX="269.0" layoutY="220.0" prefHeight="31.0" prefWidth="93.0" promptText="Adresse" styleClass="textInfo" />
+                  <ImageView fitHeight="32.0" fitWidth="60.0" layoutX="373.0" layoutY="214.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/img/address.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="60.0" layoutX="155.0" layoutY="132.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/img/userWhite.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="60.0" layoutX="156.0" layoutY="52.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/img/pin_code.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextField fx:id="matricule" layoutX="32.0" layoutY="52.0" prefHeight="31.0" prefWidth="93.0" promptText="Matricule" styleClass="textInfo" />
+                  <JFXTextField fx:id="contact" layoutX="271.0" layoutY="53.0" prefHeight="31.0" prefWidth="93.0" promptText="Contact" styleClass="textInfo" />
+                  <ImageView fitHeight="32.0" fitWidth="60.0" layoutX="375.0" layoutY="48.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/img/phone.png" />
+                     </image>
+                  </ImageView>
+                  <JFXComboBox fx:id="type" layoutX="32.0" layoutY="213.0" prefHeight="31.0" prefWidth="122.0" promptText="Type" />
+                  <JFXToggleButton fx:id="actif" layoutX="257.0" layoutY="119.0" styleClass="textInfo" text="Actif" />
+               </children></Pane>
+            <JFXButton fx:id="annuler" layoutX="27.0" layoutY="481.0" onMouseClicked="#annuler" ripplerFill="#2196f3" styleClass="b" text="Annuler">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="valider" disable="true" layoutX="157.0" layoutY="481.0" onAction="#valider" ripplerFill="#2196f3" styleClass="b" text="Valider">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <Separator layoutX="19.0" layoutY="470.0" opacity="0.59" prefHeight="3.0" prefWidth="210.0" />
+            <Label layoutX="336.0" layoutY="501.0" styleClass="version" text="\@script-0---eShop" />
+            <Pane layoutX="196.0" layoutY="78.0" prefHeight="29.0" prefWidth="74.0" style="-fx-background-color: #ffffff; -fx-background-radius: 0.9em;" />
+            <Pane layoutX="-31.0" layoutY="277.0" prefHeight="22.0" prefWidth="74.0" rotate="89.0" style="-fx-background-color: #ffffff; -fx-background-radius: 0.9em;" />
+            <Pane layoutX="407.0" layoutY="275.0" prefHeight="22.0" prefWidth="74.0" rotate="90.0" style="-fx-background-color: #ffffff; -fx-background-radius: 0.9em;" />
+            <Pane layoutX="409.0" layoutY="451.0" prefHeight="10.0" prefWidth="74.0" rotate="90.0" style="-fx-background-color: #ffffff; -fx-background-radius: 0.9em;" />
+            <Pane layoutX="-33.0" layoutY="451.0" prefHeight="10.0" prefWidth="74.0" rotate="90.0" style="-fx-background-color: #ffffff; -fx-background-radius: 0.9em;" />
+            <ImageView fx:id="apercuImg" fitHeight="142.0" fitWidth="139.0" layoutX="538.0" layoutY="104.0" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/img/user_2.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="apercuMatricule" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="579.0" layoutY="321.0" text="Matricule" textFill="#0e6158">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="apercuNom" alignment="CENTER" contentDisplay="RIGHT" layoutX="449.0" layoutY="281.0" prefHeight="31.0" prefWidth="322.0" text="Nom" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="apercuContact" alignment="CENTER" contentDisplay="RIGHT" layoutX="476.0" layoutY="410.0" prefHeight="30.0" prefWidth="269.0" text="Contact">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="apercuType" alignment="CENTER" layoutX="474.0" layoutY="349.0" prefHeight="26.0" prefWidth="269.0" text="Type" textFill="#ff0606">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="editImg" contentDisplay="GRAPHIC_ONLY" layoutX="641.0" layoutY="299.0" onAction="#editImg">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXComboBox fx:id="langue" labelFloat="true" layoutX="628.0" layoutY="-1.0" prefHeight="31.0" prefWidth="103.0" promptText="Language" unFocusColor="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXComboBox>
+            <ImageView fitHeight="36.0" fitWidth="34.0" layoutX="726.0" layoutY="1.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/img/translation.png" />
+               </image>
+            </ImageView>
+            <FontAwesomeIconView fill="#018383" glyphName="EDIT" layoutX="645.0" layoutY="259.0" mouseTransparent="true" size="30" />
+            <Label fx:id="apercuEmail" alignment="CENTER" contentDisplay="RIGHT" layoutX="475.0" layoutY="378.0" prefHeight="30.0" prefWidth="269.0" text="Email">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="apercuAdresse" alignment="CENTER" contentDisplay="RIGHT" layoutX="475.0" layoutY="442.0" prefHeight="30.0" prefWidth="269.0" text="Adresse">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="apercuLogin" alignment="CENTER" contentDisplay="RIGHT" layoutX="475.0" layoutY="475.0" prefHeight="30.0" prefWidth="269.0" text="Nom d'utilisateur">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+   <padding>
+      <Insets bottom="-5.0" left="-5.0" right="-5.0" top="-5.0" />
+   </padding>
+</StackPane>

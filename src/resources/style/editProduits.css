@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 23, 2020, 11:40:28 AM
+    Author     : Isaac
+*/
+
+@import url("variables.css");
+@import url("chemin.css");
+@import url("textField.css");
+@import url("datePicker.css");
+@import url("comboBox.css");
+@import url("toggleButton.css");
+@import url("buttons.css");
+
+
+.rootPane{
+    -fx-background-color:-fx-second-color;
+}
+
+.paneEntete{
+     -fx-background-color:-fx-first-color-91-transparent;
+}
+
+
+.paneTitle{
+    -fx-font-size:15px;
+    -fx-text-fill:-fx-first-color-91-transparent;
+}
+
+.panePied{
+    -fx-background-color:-fx-first-color;
+    -fx-background-radius:5em 5em 0em 0em;
+}
+
+.isActif{
+    -jfx-toggle-color:-fx-first-color;
+    -jfx-toggle-line-color:-fx-first-color;
+}
+
+.isActif:selected{
+    -fx-text-fill:-fx-first-color;
+}
+
+.version{
+    -fx-font-size: 13px;
+    -fx-text-fill: -fx-second-color;
+}

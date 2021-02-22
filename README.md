@@ -1,2 +1,3 @@
-# eShopApp
-Application de gestion d'un supermarché
+# eShop
+Projet B.D.
+PC application developped with javaFX

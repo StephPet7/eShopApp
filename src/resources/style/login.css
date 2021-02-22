@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 16, 2020, 11:31:23 PM
+    Author     : Isaac
+*/
+
+@import url("rootPane.css");
+@import url("variables.css");
+@import url("buttons.css");
+@import url("textField.css");
+@import url("checkBox.css");
+@import url("logo.css");
+@import url("comboBox.css");
+
+.rootPane2{
+    -fx-background-color: -fx-first-color-91-transparent;
+    -fx-background-radius: 10% 40% 10% 50%;
+    -fx-border-radius: 10% 10% 10% 50%;
+    -fx-border-width: 5px 2px 10px 0px
+}
+
+/**************** 
+    -fx-effect: dropshadow(<blur-type>,<color>,<radius>,<Spread>,<offset-x>,<offset-y>)
+    */

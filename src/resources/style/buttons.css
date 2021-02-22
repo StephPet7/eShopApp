@@ -1,0 +1,81 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 16, 2020, 11:35:37 PM
+    Author     : Isaac
+*/
+
+/* *********** Button without background *********/
+
+.bwi{
+    -fx-border-color:-fx-first-color;
+    -fx-border-radius:2em;
+    -fx-background-radius:2em;
+    -fx-text-fill:-fx-first-color;
+    -jfx-rippler-fill:-fx-first-color;
+}
+
+.bwi:hover{
+	-fx-background-color: -fx-first-color-5-transparent;
+	-fx-text-fill:-fx-second-color;	
+}
+/*********** Button without background *********/
+
+.bw{
+    -fx-border-color:-fx-second-color;
+    -fx-border-radius:  1em 2em 2em 1em;
+    -fx-background-radius:  1em 2em 2em 1em;
+    -fx-text-fill:-fx-second-color;
+    -jfx-rippler-fill:-fx-second-color;
+}
+
+.bw:hover{
+	-fx-background-color: -fx-second-color-5-transparent;
+	-fx-text-fill:-fx-first-color;	
+}
+
+/************* Button ***********/
+.b{
+    -fx-background-color:-fx-first-color;
+    -fx-background-radius:2em;
+    -fx-text-fill:-fx-second-color;
+    -fx-border-color:-fx-second-color;
+    -fx-border-radius:2.1em;
+    -jfx-rippler-fill:-fx-second-color;
+}
+
+.b:hover{
+	-fx-background-color: derive(-fx-first-color-hex,70%);
+	-fx-background-radius:2em;
+	-fx-text-fill:-fx-first-color;
+}
+
+.bSelected{
+    -fx-background-color:-fx-second-color;
+    -fx-background-radius:2em;
+    -fx-text-fill:-fx-first-color;
+    
+}
+/* ********** link ************ */
+.link{
+    -fx-text-fill:-fx-second-color;
+    -fx-cursor: hand;
+    -jfx-rippler-fill:-fx-second-color;
+}
+
+/* **********Delete Button **********/
+.bdel{
+    -fx-border-color:-fx-second-color;
+    -fx-border-radius:  1em 2em 2em 1em;
+    -fx-background-color:derive(-fx-first-color-hex, -50%);
+    -fx-background-radius:  1em 2em 2em 1em;
+    -fx-text-fill:-fx-second-color;
+    -jfx-rippler-fill:-fx-second-color;
+}
+
+.bdel:hover{
+    -fx-background-color:derive(-fx-first-color-hex, -30%);
+}

@@ -1,0 +1,21 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 16, 2020, 11:45:48 PM
+    Author     : Isaac
+*/
+
+*{
+    -fx-first-color:rgb(56,142, 60);
+    -fx-first-color-91-transparent:rgba(56,142, 60,0.91);
+    -fx-first-color-hex:#388e3c;
+    
+    -fx-second-color:rgb(255,255,255);
+    -fx-second-color-hex:#ffffff;
+    -fx-second-color-5-transparent:rgba(255,255,255,0.5);
+    
+    -fx-shadow-color:#000000;
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane style="-fx-background-color: TRANSPARENT;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="magasinier.produit.ViewProduitsController">
+   <children>
+      <Pagination fx:id="pagination" currentPageIndex="2" pageCount="20" prefHeight="343.0" prefWidth="465.0" style="-fx-background-color: white; -fx-background-radius: 1.3em 1.3em 0em 0em; -fx-border-color: #0b6f4f; -fx-border-radius: 1.2em 1.2em 0 0;" />
+      <Pane fx:id="apercuPane" layoutX="9.0" layoutY="26.0" prefHeight="268.0" prefWidth="437.0" style="-fx-background-color: #ffffff; -fx-border-color: #00796b; -fx-border-width: 0 0 2px 0;" stylesheets="@../../resources/style/editProduits.css">
+         <children>
+            <Pane layoutX="197.0" layoutY="43.0" maxWidth="239.0" prefHeight="157.0" prefWidth="230.0" style="-fx-background-color: #fcfcfc; -fx-background-radius: 0  1.1em 1.1em 0; -fx-border-color: #0b6f4f; -fx-border-radius: 0  1em 1em 0;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Label fx:id="nom" contentDisplay="RIGHT" layoutX="34.0" layoutY="2.0" maxWidth="191.0" minWidth="191.0" prefHeight="31.0" prefWidth="191.0" text="Nom produit" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <graphic>
+                        <Label fx:id="code" alignment="CENTER_RIGHT" contentDisplay="CENTER" text="code" textFill="#095757">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </Label>
+                  <Label fx:id="prix" contentDisplay="RIGHT" layoutX="37.0" layoutY="44.0" prefHeight="30.0" text="1000" textFill="#f50000">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <graphic>
+                        <Label text="FCFA" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="quantite" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="37.0" layoutY="84.0" prefHeight="30.0" text="1000" textFill="#f50000">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <graphic>
+                        <Label text="en Stock" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="categorie" layoutX="33.0" layoutY="118.0" prefHeight="26.0" prefWidth="191.0" text="Categorie" textFill="#727070" wrapText="true">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets right="3.0" />
+               </padding>
+            </Pane>
+            <FontAwesomeIconView fx:id="close" fill="#00796b" glyphName="CLOSE" layoutX="391.0" layoutY="20.0" onMouseClicked="#close" size="25" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" />
+            <Circle fill="#fcfcfc" layoutX="124.0" layoutY="121.0" radius="107.0" stroke="#0b6f4f" strokeLineCap="ROUND">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Circle>
+            <ImageView fx:id="apercuImg" fitHeight="142.0" fitWidth="139.0" layoutX="56.0" layoutY="53.0" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/img/defaultProduct.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="modify" layoutX="329.0" layoutY="214.0" onAction="#modify" styleClass="b" text="Modifier">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="EDIT" size="15" />
+               </graphic>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets bottom="5.0" right="10.0" />
+         </padding>
+      </Pane>
+   </children>
+</Pane>

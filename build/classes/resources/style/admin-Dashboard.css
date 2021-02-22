@@ -1,0 +1,57 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 17, 2020, 2:44:34 PM
+    Author     : Isaac
+*/
+
+@import url("rootPane.css");
+@import url("variables.css");
+@import url("logo.css");
+@import url("comboBox.css");
+@import url("chemin.css");
+@import url("usernameProperties.css");
+
+.rootPane2{
+    -fx-background-color: -fx-first-color-91-transparent;
+    -fx-background-radius:  0 2% 2% 2%;
+}
+
+.username{
+    -fx-text-fill: -fx-second-color;
+    -fx-font-size: 19px;
+}
+
+.question{
+    -fx-text-fill: -fx-second-color;
+    -fx-font-size: 17px;
+    -fx-alignment: center;
+}
+
+.optionPane{
+	-fx-background-color:-fx-first-color;
+	-fx-border-color:-fx-second-color;
+	-fx-border-radius:1em;
+	-fx-background-radius:1.1em;
+}
+
+.optionPane .label{
+    -fx-font-size: 19px;
+    -fx-text-fill: -fx-second-color;
+    -fx-cursor: hand;
+    
+}
+
+.optionPane:hover{
+	-fx-scale-x:1.2;
+	-fx-scale-y:1.2;	
+	-fx-effect: dropshadow(two-pass-box , #000000, 10, 0.0 , 4, 5);		
+}
+
+.version{
+    -fx-font-size: 13px;
+    -fx-text-fill: -fx-second-color;
+}

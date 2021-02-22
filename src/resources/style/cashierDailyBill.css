@@ -1,0 +1,81 @@
+@import url("rootPane.css");
+@import url("variables.css");
+@import url("logo.css");
+@import url("chemin.css");
+@import url("usernameProperties.css");
+@import url("tableView.css");
+@import url("toggleButton.css");
+@import url("buttons.css");
+@import url("comboBox.css");
+@import url("scrollPane.css");
+@import url("datePicker.css");
+
+
+.rootPane2{
+    -fx-background-color: -fx-first-color-91-transparent;
+    -fx-background-radius: 15% 2% 2% 2%;
+}
+
+.paneDetails{
+    -fx-background-color:derive(-fx-first-color-hex,10%);
+    -fx-background-radius: 1em;
+    -fx-effect:dropshadow(three-pass-box,-fx-shadow-color,10,0,0,0);
+
+}
+
+.searchButton{
+    -fx-background-color: -fx-second-color;
+    -fx-background-radius: 0em 0em 0em 1em;
+    -fx-border-color:-fx-first-color;
+    -fx-border-radius:  0em 0em 0em 1em;
+}
+
+.searchButton:hover{
+    -fx-background-color: derive(-fx-first-color-hex,50%);
+}
+
+.searchTextField{
+    -fx-background-radius: 0em 1.1em 0em 0em;
+    -fx-border-color: -fx-first-color;
+    -fx-border-radius:  0em 1.1em 0em 0em;
+    -fx-text-fill:-fx-first-color;
+    -fx-prompt-text:-fx-first-color;
+    -fx-font-size:14px;
+}
+
+.popup{
+    -fx-background-color:-fx-second-color;
+    -fx-border-color: -fx-first-color;
+    -fx-border-radius: 0em 0.8em 0.8em 0em;
+    -fx-background-radius: 0em 0.9em 0.9em 0em;
+    -fx-effect:dropshadow(three-pass-box,-fx-shadow-color,10,0,0,0);
+}
+
+.popup .button{
+   /* -fx-border-radius: 0em 0.8em 0.8em 0em;*/
+    -fx-background-radius: 0em 0.7em 0.7em 0em;
+}
+
+.popup .button:hover{
+    -fx-background-color: -fx-first-color;
+    -fx-text-fill: -fx-second-color;
+}
+
+.popupUser{
+    -fx-background-color:-fx-second-color;
+    -fx-border-color: -fx-first-color;
+    -fx-border-radius: 0.8em 0.8em 0.8em 0em;
+    -fx-background-radius: 0.9em 0.9em 0.9em 0em;
+    -fx-effect:dropshadow(three-pass-box,-fx-shadow-color,10,0,0,0);
+}
+
+.popupUser .button{
+    -fx-background-radius: 0em 0.7em 0.7em 0em;
+    -fx-text-fill: -fx-first-color;
+    -fx-cursor: hand;
+}
+
+.popupUser .button:hover{
+    -fx-background-color: -fx-first-color;
+    -fx-text-fill: -fx-second-color;
+}

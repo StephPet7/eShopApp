@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 16, 2020, 11:45:48 PM
+    Author     : Isaac
+*/
+
+*{
+    -fx-first-color:rgb( 0,121,107);
+    -fx-first-color-91-transparent:rgba(0,121,107,0.91);
+    -fx-first-color-80-transparent:rgba(0,121,107,0.8);
+    -fx-first-color-5-transparent:rgba(0,121,107,0.5);
+    -fx-first-color-hex:#00796b;
+    
+    -fx-second-color:rgb(255,255,255);
+    -fx-second-color-hex:#ffffff;
+    -fx-second-color-5-transparent:rgba(255,255,255,0.5);
+    -fx-second-color-90-transparent:rgba(255,255,255,0.90);
+    
+    -fx-shadow-color:#000000;
+}
+
+/**{
+    -fx-first-color:rgb(22,162,160);
+    -fx-first-color-91-transparent:rgba( 22,162,160,0.91);
+    -fx-first-color-80-transparent:rgba( 22,162,160,0.8);
+    -fx-first-color-5-transparent:rgba( 22,162,160,0.5);
+    -fx-first-color-hex:#16A2A0;
+    
+    -fx-second-color:rgb(255,255,255);
+    -fx-second-color-hex:#ffffff;
+    -fx-second-color-5-transparent:rgba(255,255,255,0.5);
+    -fx-second-color-90-transparent:rgba(255,255,255,0.90);
+    
+    -fx-shadow-color:#000000;
+}*/

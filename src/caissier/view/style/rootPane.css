@@ -1,0 +1,85 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 16, 2020, 11:35:09 PM
+    Author     : Isaac
+*/
+
+.rootPane{
+	-fx-background-image: url('../images/background.jpg');
+	-fx-background-size: 100% 100%;
+}
+
+.profilePane {
+    -fx-background-color : rgb(48, 48, 79);
+}
+
+.centerPane{
+    -fx-background-radius:  10em 1em 1em 1em;
+    -fx-background-color: rgba(145, 239, 145,0.95);
+}
+
+.cButtonSel{
+	-fx-background-color: #ffffff;
+	-fx-background-radius:2em;
+	-fx-text-fill:rgb(11,148,11);	
+}
+	
+.cButton{
+	-fx-background-color: rgb(11,148,11);
+	-fx-background-radius:2em;
+	-fx-text-fill:#ffffff;
+	-fx-border-color:#ffffff;
+	-fx-border-radius:2.1em;
+}
+	
+.cButton:hover{
+	-fx-background-color: rgb(145, 239, 145);
+	-fx-background-radius:2em;
+	-fx-text-fill:#ffffff;
+}
+
+.footerPane {
+    -fx-background-color: #ffffff;
+}
+
+.headerPane {
+    -fx-background-color: white;
+    -fx-background-radius: 2em;
+    -fx-padding: 0 2 0 10;
+}
+
+.hLabels {
+    -fx-text-fill: rgb(11, 148, 11);
+}
+
+.hButton{
+	-fx-background-color: rgb(11,148,11);
+	-fx-background-radius:1em;
+	-fx-text-fill:#ffffff;
+	-fx-border-color:#ffffff;
+	-fx-border-radius:1.1em;
+}
+	
+.hButton:hover{
+	-fx-background-color: rgb(145, 239, 145);
+	-fx-background-radius:1em;
+	-fx-text-fill:#ffffff;
+}
+
+.hButtonSup{
+	-fx-background-color: rgb(11,148,11);
+	-fx-background-radius:1em 3em 3em 1em;
+	-fx-text-fill:#ffffff;
+	-fx-border-color:#ffffff;
+	-fx-border-radius:1.1em 3.2em 3.2em 1.1em;
+}
+	
+.hButtonSup:hover{
+	-fx-background-color: rgb(145, 239, 145);
+	-fx-background-radius:1em 3em 3em 1em;
+	-fx-text-fill:#ffffff;
+}

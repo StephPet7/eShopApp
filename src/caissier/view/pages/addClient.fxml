@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="420.0" stylesheets="@../style/addClientStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="caissier.controller.AddClientController">
+   <children>
+      <Pane layoutX="86.0" prefHeight="600.0" prefWidth="420.0" styleClass="down-child-pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <effect>
+            <DropShadow height="112.92" radius="41.875" spread="0.39" width="56.58" />
+         </effect>
+         <children>
+            <Label fx:id="alertLabel" alignment="CENTER" layoutX="35.0" layoutY="126.0" prefHeight="32.0" prefWidth="360.0" textFill="#f50000">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane prefHeight="121.0" prefWidth="420.0" styleClass="up-child-pane">
+         <children>
+            <Pane layoutY="-5.0" prefHeight="19.0" prefWidth="420.0" styleClass="down-child-pane" />
+            <Pane layoutX="104.0" layoutY="7.0">
+               <children>
+                  <Label layoutX="1.0" layoutY="8.0" prefHeight="75.0" prefWidth="41.0" styleClass="e" text="e" textFill="WHITE">
+                     <font>
+                        <Font name="Broadway" size="90.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#2196f3" />
+                     </effect>
+                  </Label>
+                  <Label layoutX="89.0" layoutY="38.0" styleClass="hop" text="hop" textFill="#00796bc4">
+                     <font>
+                        <Font name="CentSchbkCyrill BT Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="38.0" layoutY="-2.0" prefHeight="75.0" prefWidth="41.0" styleClass="s" text="S" textFill="#00796b">
+                     <font>
+                        <Font name="Broadway" size="90.0" />
+                     </font>
+                     <effect>
+                        <DropShadow color="#2196f3" />
+                     </effect>
+                  </Label>
+                  <Separator layoutX="55.0" layoutY="87.0" opacity="0.45" prefHeight="0.0" prefWidth="174.0" />
+                  <Label fx:id="slogan" layoutX="91.0" layoutY="88.0" styleClass="slogan" text="\${Slogan Here}" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="98.0" layoutY="162.0" prefHeight="438.0" prefWidth="420.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="162.0">
+         <children>
+            <JFXTextField fx:id="nameTF" focusColor="#00796b" labelFloat="true" layoutX="83.0" layoutY="135.0" prefHeight="32.0" prefWidth="298.0" promptText="%column.name" unFocusColor="#00796b">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="telTF" focusColor="#00796b" labelFloat="true" layoutX="183.0" layoutY="210.0" prefHeight="32.0" prefWidth="198.0" promptText="%column.tel" unFocusColor="#00796b">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="adresseTF" focusColor="#00796b" labelFloat="true" layoutX="83.0" layoutY="283.0" prefHeight="32.0" prefWidth="298.0" promptText="%column.adresse" unFocusColor="#00796b">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="addButton" layoutX="84.0" layoutY="379.0" onAction="#add" prefHeight="32.0" prefWidth="111.0" text="%button.add" wrapText="true" />
+            <JFXButton fx:id="cancelButton" layoutX="250.0" layoutY="379.0" onAction="#cancel" prefHeight="32.0" prefWidth="111.0" text="%button.cancel" wrapText="true" />
+            <Label fx:id="headingLabel" alignment="CENTER" graphicTextGap="10.0" layoutX="104.0" layoutY="16.0" prefHeight="72.0" prefWidth="243.0" styleClass="label-add-client" text="%label.addUser" textFill="#009718">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+               <graphic>
+                  <MaterialDesignIconView fx:id="headingImg" fill="#00796b" glyphName="ACCOUNT_PLUS" size="60" />
+               </graphic>
+            </Label>
+            <Pane layoutX="51.0" layoutY="-35.0" prefHeight="121.0" prefWidth="16.0" styleClass="down-child-pane" />
+            <Pane layoutX="385.0" layoutY="345.0" prefHeight="133.0" prefWidth="16.0" rotate="48.8" styleClass="down-child-pane" />
+            <JFXComboBox fx:id="telIndex" focusColor="#00796b" layoutX="86.0" layoutY="210.0" prefHeight="32.0" prefWidth="92.0" stylesheets="@../style/comboBox.css" />
+            <MaterialDesignIconView fill="#00796b" glyphName="ACCOUNT" layoutX="38.0" layoutY="166.0" size="40" />
+            <MaterialDesignIconView fill="#00796b" glyphName="PHONE" layoutX="38.0" layoutY="241.0" size="40" />
+            <MaterialDesignIconView fill="#00796b" glyphName="MAP_MARKER_RADIUS" layoutX="39.0" layoutY="310.0" size="40" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

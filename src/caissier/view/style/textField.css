@@ -1,0 +1,18 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 16, 2020, 11:38:07 PM
+    Author     : Isaac
+*/
+
+.t{
+    -fx-background-color:-fx-second-color;
+    -fx-background-radius: 5em 5em 0em 1em;
+    -jfx-label-float:true;
+    -jfx-focus-color:-fx-second-color;
+    -jfx-unfocus-color:-fx-first-color;
+}
+
